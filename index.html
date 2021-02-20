@@ -1,0 +1,110 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<title>Test</title>
+
+<link rel="stylesheet" href="css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+
+<body>
+
+
+<section>
+	<div>
+		<ul class="explanation">
+			<li>Originally built a couple years back for Comcast, Xfinity.com marketing pages.</li>
+			<li>UX request was custom design of controls area.</li>
+			<li>My POC was used for v1 of the web accessible video player. My idea was to bind fake controls to hidden input elements for full keyboard functionality support.</li>
+			<li>Toggle controls and advance vid and volume using keyboard spacebar / arrow keys.</li>
+			<li>Can also plug in a different vid timestamp in the circular time counter above the time slider handle. Example... type in ":02" into the time input.</li>
+		</ul>
+	</div>
+</section>
+
+<section>
+	<div>
+
+		<button class="btn btn--launchVid">Toggle Video</button>
+
+		<br /><br /><br />
+
+		<!-- video item -->
+		<div class="vid-player">
+			<video class="vid-player__video" poster="https://cdn.comcast.com/-/media/Images/www_xfinity_com/TV/X1/2019%20Redesign/ShowcaseInfo_SportsApp.jpg">
+				<source src="https://cdn-ec-pan-11.cim-prog.top.comcast.net/CDNFan03/OPUS_Marketing/311/343/082719%20X1_Superiority_Hero_Video.mp4">
+			</video>
+
+			<div class="vid-player__controls">
+
+				<div class="vid-player__controls-row">
+					<div class="vid-player__controls-item vid-player__controls--togglePlay">
+						<button class="vid-player__controls-button vid-player__controls-button--play">Play</button>
+						<button class="vid-player__controls-button vid-player__controls-button--pause">Pause</button>
+					</div>
+
+					<div class="vid-player__controls-item vid-player__controls-item--seek">
+						<input type="range" class="vid-player__controls-range vid-player__controls-range--seek vh" value="0" step="2">
+						<p class="vid-player-btn-title">Video Seek</p>
+						<div class="vid-player-fakeControl">
+							<div class="vid-player-fakeControl__thermometer">
+								<div class="vid-player-fakeControl__handle">
+									<input class="vid-player__controls--inputTime" type="text" placeholder="0:00">
+								</div>
+								<div class="vid-player-fakeControl__fill"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="vid-player__controls-item">
+						<p class="vid-player__controls-finalDuration">0:00</p>
+					</div>
+
+					<div class="vid-player__controls-item">
+						<button class="vid-player__controls-button vid-player__controls-button--mute">Mute</button>
+					</div>
+
+					<div class="vid-player__controls-item">
+						<input type="range" class="vid-player__controls-range vid-player__controls-range--volume vh" min="0" max="1" step="0.1" value="1">
+						<p class="vid-player-btn-title">Volume</p>
+						<div class="vid-player-fakeControl">
+							<div class="vid-player-fakeControl__thermometer">
+								<div class="vid-player-fakeControl__handle"></div>
+								<div class="vid-player-fakeControl__fill"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="vid-player__controls-item">
+						<button class="vid-player__controls-button vid-player__controls-button--fullscreen">Fullscreen</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<!-- video item -->
+
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</section>
+
+
+
+<section>
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</section>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
