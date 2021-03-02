@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+coverage
+dist/
+package-lock.json
+config/config.dev.json
+config/config.prev.json
+config/config.wildwest.json
+config/config.prod.json
+.npmrc
+yarn-error.log
+.vscode/
+src/assets/shared
+.next
